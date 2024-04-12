@@ -6,15 +6,15 @@
 body{
     padding: 50px;
     background-image: url(assets/img/background.png);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
     text-decoration: none;
-    color: rgb(68, 39, 231);
+    color: rgb(58, 48, 201);
     font-size: 18px;
 }
 
@@ -27,7 +27,8 @@ header{
 
 nav{
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     height: 50px;
     background-color: rgb(60, 68, 75);
     justify-content: space-around;
@@ -68,12 +69,14 @@ main{
     display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 
 main section{
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
 }
 .big-section-holder{
     width: 700px;
@@ -81,7 +84,7 @@ main section{
 }
 
 .big-section{
-    background-color: rgb(60, 68, 75, 0.8);
+    background-color: rgb(60, 68, 75, 0.9);
     padding: 20px;
     margin-bottom: 30px;
 }
@@ -118,4 +121,44 @@ main section p{
 }
 .small-section h2{
     color: lime;
+}
+
+
+@media(max-width: 1200px){
+    main{
+        flex-direction: column;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .big-section-holder{
+        width: 100%;
+    }
+
+    nav ul li a{
+        font-size: 24px;
+    }
+
+    .big-section{
+        background-color: rgb(60, 68, 75, 0.95);
+    }
+
+    .small-section{
+        background-color: rgb(60, 68, 75, 0.95);
+    }
+
+}
+
+@media(max-width: 640px){
+    nav ul{
+        width: 70%;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+
 }
