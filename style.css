@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 50px;
+    background-image: url(assets/img/background.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(68, 39, 231);
+    font-size: 18px;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    width: 1200px;
+    height: 50px;
+    background-color: rgb(60, 68, 75);
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+}
+
+nav ul li a:hover{
+    color: rgb(161, 173, 47);
+}
+
+.donate-button{
+    border: none;
+    color: rgb(0, 3, 10);
+    background-color: rgb(156, 212, 100);
+    padding: 4px 13px 4px 13px;
+    font-size: 20px;
+}
+
+.donate-button:hover{
+    opacity: .7;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main section{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+.big-section-holder{
+    width: 700px;
+    margin-top: 50px;
+}
+
+.big-section{
+    background-color: rgb(60, 68, 75, 0.8);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main section p{
+    font-size: 17px;
+    opacity: .75;
+    text-align: justify;
+}
+
+.big-section div{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+
+.p-data{
+    color: rgb(238, 255, 0);
+}
+
+.small-section{
+    width: 300px;
+    background-color: rgb(60, 68, 75, 0.8);
+    margin-top: 50px;
+    max-height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+}
+
+.small-section p{
+    font-size: 18px;
+}
+.small-section h2{
+    color: lime;
+}
