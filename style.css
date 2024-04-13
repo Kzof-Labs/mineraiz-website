@@ -92,7 +92,6 @@ main section{
 main section p{
     font-size: 17px;
     opacity: .75;
-    text-align: justify;
 }
 
 .big-section div{
@@ -121,6 +120,11 @@ main section p{
 }
 .small-section h2{
     color: lime;
+}
+
+.big-section img{
+    max-width: 100%;
+    margin-top: 15px;
 }
 
 
